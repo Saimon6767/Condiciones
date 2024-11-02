@@ -1,0 +1,47 @@
+namespace Produccion_semanal
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double ps1, ps2, ps3, ps4, ps5, p;
+            Console.WriteLine("ingresa la produccion semanal del lunes");
+            ps1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("ingresa la produccion semanal del martes");
+            ps2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("ingresa la produccion semanal del miercoles");
+            ps3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("ingresa la produccion semanal del jueves");
+            ps4 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("ingresa la produccion semanal del viernes");
+            ps5 = Convert.ToDouble(Console.ReadLine());
+            
+
+            
+
+
+
+
+            p = ps1 + ps2 + ps3 + ps4 + ps5;
+
+            double pfinal = p / 5;
+            
+
+            if (pfinal >= 20000)
+            {
+                Console.WriteLine("su produccion es " + pfinal);
+                Console.WriteLine("ha recibido 3000$ extra");
+            }
+
+            else
+            {
+                Console.WriteLine("SU INCENTIVO ES N/A");
+            }
+
+        }
+    }
+}
